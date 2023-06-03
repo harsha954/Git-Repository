@@ -1,11 +1,12 @@
 import random
 print("Welcome to Number guessing game!")
-NoofPlayers=int(input("Please enter no. of players:"))#3
+NoOfPlayers=int(input("Please enter no. of players:"))#3
 PlayersList=[]
-for i in range(NoofPlayers):
+for i in range(NoOfPlayers):
     name=input("Enter player {0}:".format(i+1))
     PlayersList.append(name)
 
+#Testing git
 WinnersList=[]
 Hints=False
 for i in PlayersList:
@@ -38,7 +39,7 @@ for i in PlayersList:
                     continue#skip               
         else:
             print("You lost!!")
-            print("Actuall Number is: ",RandomNumber)
+            print("Actual Number is: ",RandomNumber)
 
-print("Congracts to {0} Winners:".format(len(WinnersList)))
+print("Congrats to {0} Winners:".format(len(WinnersList)))
 print(*WinnersList)
